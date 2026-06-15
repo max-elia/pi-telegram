@@ -137,7 +137,7 @@ If you send more Telegram messages while pi is busy, they are queued and process
 
 The extension streams assistant text previews back to Telegram while pi is generating.
 
-It tries Telegram draft streaming first with `sendMessageDraft`. If that is not supported for your bot, it falls back to `sendMessage` plus `editMessageText`.
+It sends one preview message and updates it with `editMessageText` until the final response is ready.
 
 ## Notes
 
